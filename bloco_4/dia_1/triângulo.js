@@ -3,12 +3,9 @@
 let a = 80;
 let b = 60;
 let c = 40;
-let soma;
+let soma, resposta;
 
 soma = (a + b + c);
+resposta = soma == 180;
 
-if (soma == 180){
-    console.log("True");
-} else {
-    console.log("False");
-}
+console.log(resposta);
