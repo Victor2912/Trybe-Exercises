@@ -5,17 +5,25 @@
 //  ***
 // *****
 
-let n = 5;
-let piramide;
+let n = 7;
+let meio;
+let piramide; 
+let direita;
+let esquerda;
 
-for (let i = 1; i <= n - 2; i += 1){
+meio = (n + 1) / 2;
+
+for (let i = 0; i < meio; i += 1){
     piramide = "";
-    for (let i = 0; i < n; i += 1){
-        if (i == 3 - i){
-            piramide += '*';
-        } else {
+    esquerda = meio - i;
+    direita = meio + i;
+    for (j = 1; j <= n; j += 1){
+        if (j < esquerda || j > direita){
             piramide += ' ';
+        } else {
+            piramide += '*';
         }
     }
     console.log(piramide);
 }
+
