@@ -6,3 +6,23 @@
 // verificaFimPalavra("joaofernando", "fernan");
 // Retorno esperado: false
 
+function verificaFimPalavra(stringW, stringEnd) {
+    let tamanho = stringEnd.length;
+    let tamanho2 = stringW.length;
+    let cont = 0;
+
+    for (let i = 0; i < tamanho; i += 1){
+        if (stringW[(tamanho2 - 1) - i] === stringEnd[(tamanho - 1) - i]) {
+            cont += 1;
+        }
+    }
+
+    if (cont === tamanho) {
+        return true;
+    }
+    
+    return false;
+}
+
+console.log(verificaFimPalavra('joaofernando', 'fernan'));
+
