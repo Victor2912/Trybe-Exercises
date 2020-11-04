@@ -23,11 +23,11 @@ function createDaysOfTheWeek() {
       daysListItem.innerHTML = days;
 
       if (dezDaysList[index] === 24 || dezDaysList[index] === 31){
-        daysListItem.className = 'day holiday';
+        daysListItem.className = 'day-holiday';
       } else if (dezDaysList[index] === 4 || dezDaysList[index] === 11 || dezDaysList[index] === 18) {
-        daysListItem.className = 'day friday';
+        daysListItem.className = 'day-friday';
       } else if (dezDaysList[index] === 25) {
-          daysListItem.className = 'day holiday' + ' ' + 'day friday';
+          daysListItem.className = 'day-holiday' + ' ' + 'day-friday';
       } else {
         daysListItem.className = 'day';
       } 
@@ -39,12 +39,26 @@ function createDaysOfTheWeek() {
   daysCalendar();
 
   function createBotton(string) {
-      let buttonsContainer = document.querySelector('.buttons-container');
-      let buttonFeriados = document.createElement('button');
+    let buttonsContainer = document.querySelector('.buttons-container');
+    let buttonFeriados = document.createElement('button');
 
-      buttonFeriados.innerHTML = string;
+    buttonFeriados.className = 'button-feriado';
+    buttonFeriados.innerHTML = string;
 
-      buttonsContainer.appendChild(buttonFeriados);
+    buttonsContainer.appendChild(buttonFeriados);
   }
 
   createBotton('Feriados');
+
+  function corFeriados() {
+    let buttonFeriadoColor = document.querySelector('.button-feriado');
+    let daysFeriados = document.querySelectorAll('.day-holiday');
+
+    buttonFeriadoColor.addEventListener('click',function () {
+      for (let index = 0; index < daysFeriados.length; index += 1){
+          daysFeriados[index].style.backgroundColor = 'white';
+      }
+    });
+  }
+
+  corFeriados();
