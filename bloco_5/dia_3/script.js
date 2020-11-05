@@ -98,3 +98,25 @@ function bottonSextou() {
 }
 
 bottonSextou();
+
+function tarefas(string) {
+  let mytask = document.querySelector('.my-tasks');
+  let tarefa = document.createElement('span');
+
+  tarefa.innerHTML = string;
+  mytask.appendChild(tarefa);
+}
+
+tarefas('cozinhar');
+
+function legendaTarefas(string) {
+  let mytask = document.querySelector('.my-tasks');
+  let legendaTarefa = document.createElement('div');
+
+  legendaTarefa.style.backgroundColor = string;
+
+  mytask.appendChild(legendaTarefa);
+} 
+
+legendaTarefas('red');
+
