@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+    <div class="div-fielset-1">
+        <fieldset class="fielset">
+            <legend>Dados Cadastrais</legend>
+            <div class="text">
+                <label for="texto-nome">Nome:</label>
+                <input type="text" name="nome" id="texto-nome" required maxlength="40">
+            </div>
+            <div class="text">
+                <label for="text-email">E-mail</label>
+            <input type="email" name="email" id="text-email" required>
+            </div>
+            <div class="text">
+                <label for="texto-cpf">CPF</label>
+                <input type="text" name="cpf" id="texto-cpf" required>
+            </div>
+            <div class="text">
+                <label for="texto-endereco">Endereço</label>
+                <input type="text" name="endereco" id="texto-endereco" required>
+            </div>
+            <div class="text">
+                <label for="texto-cidade">Cidade</label>
+                <input type="text" name="cidade" id="texto-cidade" required>
+            </div>
+           <div class="text">
+                <label for="estados-selecionar">Estados</label>
+                <select name="estados" id="estados-selecionar" required></select>
+           </div>
+            <div class="text">
+                <input type="radio" name="tipo" id="radio-casa" required>
+                <label for="radio-casa">Casa</label>
+            </div>
+            <div class="text">
+                <input type="radio" name="tipo" id="radio-apartamento" required>
+                <label for="radio-apartamento">apartamento</label>
+            </div>
+        </fieldset>
+    </div>
+
+    <div class="div-fielset-1">
+    <fieldset>
+        <legend>último emprego</legend>
+        <div class="text">
+        <label for="resumo-trabalho-1">Resumo do currículo</label>
+        <textarea name="resumo-trabalho" id="resumo-trabalho-1" cols="30" rows="10" required></textarea maxlength="1000">
+        <label for="cargo-texto">Cargo</label>
+        <input type="text" name="cargo" id="cargo-texto" maxlength="40" required>
+        <label for="descricao-texto">Descrição do cargo</label>
+        <input type="text" name="descricao" id="descricao-texto" maxlength="500" required>
+        <label for="data-texto">Data de início</label>
+        <input type="date" name="data" id="data-texto" required>
+        </br>
+        <input type="submit" value="Enviar" id="botao">
+    </div>
+    </fieldset>
+    </div>
+</form>
+    <script src="script.js"></script>
+</body>
+</html>
