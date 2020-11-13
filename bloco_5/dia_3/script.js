@@ -120,3 +120,33 @@ function legendaTarefas(string) {
 
 legendaTarefas('red');
 
+function taskSelect() {
+  let cor = document.querySelector('.my-tasks div');
+  cor.className = 'task';
+
+  cor.addEventListener('click', function() {
+    if (cor.className === 'task-select') {
+      cor.className = 'task';
+    } else {
+      cor.className = 'task-select';
+    }
+  });
+};
+
+taskSelect();
+
+function colorNumber() {
+  let recebe = document.querySelector('#days');
+  let colorName = document.querySelector('.task-select').style.backgroundColor;
+
+  recebe.addEventListener('click', function() {
+    let rec = event.target;
+    if (rec.style.color === colorName){
+      rec.style.color = '';
+    } else {
+      rec.style.color = colorName;
+    }
+  });
+};
+
+colorNumber();
