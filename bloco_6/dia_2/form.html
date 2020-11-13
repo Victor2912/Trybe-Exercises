@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="bulma-0.9.1/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="section">
+        <h1 class="title">Forms de Cadastro</h1>
+    </section>
+    <form action="">
+      <section class="section">
+        <div class="field">
+          <div class="control">
+              <label for="texto-nome" class="label">Nome:</label>
+              <input type="text" name="nome" id="texto-nome" required maxlength="40" class="input">
+          </div>
+        </div>
+        <div class="field"></div>
+          <div class="control">
+            <label for="text-email" class="label">E-mail</label>
+            <input type="email" name="email" id="text-email" required class="input">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="texto-cpf" class="label">CPF</label>
+            <input type="text" name="cpf" id="texto-cpf" required class="input">
+            </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="texto-endereco" class="label">Endereço</label>
+            <input type="text" name="endereco" id="texto-endereco" required class="input">
+            </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="texto-cidade" class="label">Cidade</label>
+            <input type="text" name="cidade" id="texto-cidade" required class="input">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="estados-selecionar" class="label">Estados</label>
+              <div class="select is-rounded is-small">
+                <select name="estados" id="estados-selecionar" required></select>
+              </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <div class="radio">
+              <input type="radio" name="tipo" id="radio-casa" required>
+              <label for="radio-casa">Casa</label>
+              <input type="radio" name="tipo" id="radio-apartamento" required>
+              <label for="radio-apartamento">apartamento</label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <h2 class="subtitle">Conte um pouco sobre seu ultimo emprego.</h2>
+        <div class="field">
+          <div class="control">
+            <label for="resumo-trabalho-1" class="label">Resumo do currículo</label>
+            <textarea name="resumo-trabalho" id="resumo-trabalho-1" cols="30" rows="10" required class="textarea"></textarea maxlength="1000">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="cargo-texto" class="label">Cargo</label>
+            <input type="text" name="cargo" id="cargo-texto" maxlength="40" required class="input">
+          </div>
+        </div>
+        <div class="field">
+            <div class="control">
+              <label for="descricao-texto" class="label">Descrição do cargo</label>
+              <input type="text" name="descricao" id="descricao-texto" maxlength="500" required class="input">
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+              <label for="data-texto" class="label">Data de início</label>
+              <input type="date" name="data" id="data-texto" required class="input">
+            </div>
+        </div>
+        <div class="botao-center">
+            <input type="submit" value="Enviar" id="botao" class="button is-primary is-outlined">
+        </div>
+      </section>
+  </form>
+</body>
+</html>
