@@ -1,0 +1,44 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.div-fielset-1 {
+    width: 50%;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.text {
+    margin-bottom: 0;
+}
+
+.text [type=text] {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color :#d1d1d1;
+    border-radius: 3px;
+}
+
+.text [type=email] {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color :#d1d1d1;
+    border-radius: 3px;
+}
+
+.text [type=select] {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#resumo-trabalho-1 {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#botao {
+    margin: 10px 270px;
+}
