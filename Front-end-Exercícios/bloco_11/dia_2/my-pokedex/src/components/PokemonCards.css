@@ -1,0 +1,18 @@
+.pokeCards {
+  background-color: white;
+  border: solid 1px;
+  border-radius: 5px;
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  justify-content: space-around;
+  padding-left: 10px;
+}
